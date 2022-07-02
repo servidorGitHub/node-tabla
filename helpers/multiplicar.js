@@ -23,7 +23,7 @@ const crearArchivo = async(base = 5, listar, maximo) => {
         }
 
         fs.writeFileSync(`./salida/tabla - ${ base }.txt`, salida);
-        return (`Tabla - ${ base }.txt creado`.yellow);
+        return (`Tabla - ${ base }.txt creado`.yellow.italic);
 
     } catch (error) {
         throw error
